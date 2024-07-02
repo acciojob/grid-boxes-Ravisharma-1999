@@ -1,1 +1,81 @@
 /*  your css code here. If applicable */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+    grid-template-rows: repeat(3, 100px); /* 3 rows each with height of 100px */
+    gap: 10px; /* Gap between grid items */
+    max-width: 600px; /* Maximum width of the grid */
+    margin: 20px auto; /* Center the grid horizontally with some margin */
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.a {
+    background-color: #3498db;
+    grid-column: span 2; /* Spans 2 columns */
+    grid-row: span 2; /* Spans 2 rows */
+}
+
+.b {
+    background-color: #2ecc71;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.c {
+    background-color: #f39c12;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.d {
+    background-color: #e74c3c;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.e {
+    background-color: #9b59b6;
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.f {
+    background-color: #34495e;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.g {
+    background-color: #1abc9c;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.h {
+    background-color: #e67e22;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.i {
+    background-color: #95a5a6;
+    grid-column: span 1;
+    grid-row: span 1;
+}
