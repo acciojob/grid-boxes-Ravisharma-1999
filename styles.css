@@ -1,81 +1,67 @@
-/*  your css code here. If applicable */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
-    grid-template-rows: repeat(3, 100px); /* 3 rows each with height of 100px */
-    gap: 10px; /* Gap between grid items */
-    max-width: 600px; /* Maximum width of the grid */
-    margin: 20px auto; /* Center the grid horizontally with some margin */
-    padding: 20px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2px;
+    background-color: #fff;
 }
 
-.box {
+.item {
+    background-color: green;
+    color: white;
+    border: 1px solid white;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     font-size: 24px;
-    font-weight: bold;
-    color: #fff;
+    height: 100px;
 }
 
-.a {
-    background-color: #3498db;
-    grid-column: span 2; /* Spans 2 columns */
-    grid-row: span 2; /* Spans 2 rows */
+.item-1 {
+    grid-column: 1 / 4;
+    height: 200px;
 }
 
-.b {
-    background-color: #2ecc71;
-    grid-column: span 1;
-    grid-row: span 1;
+.item-2 {
+    grid-row: 2 / 6;
+    grid-column: 1 / 2;
+    height: auto;
 }
 
-.c {
-    background-color: #f39c12;
-    grid-column: span 1;
-    grid-row: span 1;
+.item-3 {
+    grid-column: 2 / 3;
 }
 
-.d {
-    background-color: #e74c3c;
-    grid-column: span 1;
-    grid-row: span 1;
+.item-4 {
+    grid-column: 3 / 4;
 }
 
-.e {
-    background-color: #9b59b6;
-    grid-column: span 2;
-    grid-row: span 1;
+.item-5 {
+    grid-column: 2 / 3;
 }
 
-.f {
-    background-color: #34495e;
-    grid-column: span 1;
-    grid-row: span 1;
+.item-6 {
+    grid-column: 3 / 4;
 }
 
-.g {
-    background-color: #1abc9c;
-    grid-column: span 1;
-    grid-row: span 1;
+.item-7 {
+    grid-column: 2 / 3;
 }
 
-.h {
-    background-color: #e67e22;
-    grid-column: span 1;
-    grid-row: span 1;
+.item-8 {
+    grid-column: 3 / 4;
 }
 
-.i {
-    background-color: #95a5a6;
-    grid-column: span 1;
-    grid-row: span 1;
+.item-9 {
+    grid-column: 4 / 5;
+}
+
+.item-10 {
+    grid-column: 1 / 4;
+    height: 200px;
 }
